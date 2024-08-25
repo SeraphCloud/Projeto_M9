@@ -14,11 +14,33 @@
         <h1>Galeria de Fotos</h1>
         <button type="button">Nova Imagem +</button>
     </header>
-    <form action="">
+    <form>
         <h2>Inserir nova imagem</h2>
-        <input type="url" required placeholder="URL da imagem">
-        <button type="reset">Adicionar</button>
-        <button type="reset">Cancelar</button>
+        <input type="url" id="endereco-imagem" required placeholder="URL da imagem">
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="botao-cancelar">Cancelar</button>
     </form>
+    <ul>
+        <li>
+            <img src="./images/foto1.jpg" alt="Pintura de um gato">
+            <div class="overlay-imagem-link">
+                <a href="./images/foto1.jpg" target="_blank" title="Ver imagem em tamanho real">Ver imagem em tela cheia</a>
+            </div class="overlay-imagem-link">
+        </li>
+        <li>
+            <img src="./images/foto2.jpg" alt="Foto de um flamingo">
+            <div class="overlay-imagem-link">
+                <a href="./images/foto2.jpg" target="_blank" title="Ver imagem em tamanho real">Ver imagem em tela cheia</a>
+            </div class="overlay-imagem-link">
+        </li>
+        <li>
+            <img src="./images/foto3.jpg" alt="Foto de cachorrinhos">
+            <div class="overlay-imagem-link">
+                <a href="./images/foto3.jpg" target="_blank" title="Ver imagem em tamanho real">Ver imagem em tela cheia</a>
+            </div class="overlay-imagem-link">
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
